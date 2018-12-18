@@ -26,7 +26,7 @@ router.post('/user/login', (req, res)=>{
   const jwtOptions = {
     expiresIn: "30m",
     algorithm: "RS256",
-    issuer: "FtLktWHb6d6SXzfJPvGGDEAjsFVP76bK"
+    issuer: "auth"
   }
 
   const token = jwt.sign({
